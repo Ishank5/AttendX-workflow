@@ -1,0 +1,1111 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Content */
+.main-content {
+    padding: 3rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Workflow Section */
+.workflow-section {
+    margin-bottom: 5rem;
+}
+
+.workflow-container {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.workflow-path {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.workflow-step {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.step-circle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-box {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-left: 5px solid;
+    transition: transform 0.3s ease;
+}
+
+.step-box:hover {
+    transform: translateX(5px);
+}
+
+.step-box.activation {
+    border-left-color: #10b981;
+    background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+}
+
+.step-box.broadcast {
+    border-left-color: #3b82f6;
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.step-box.receiver {
+    border-left-color: #f59e0b;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.step-box.recognition {
+    border-left-color: #8b5cf6;
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.step-box.dashboard {
+    border-left-color: #ef4444;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.step-box h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.step-box p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.workflow-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.arrow-line {
+    width: 3px;
+    height: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+.arrow-head {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #667eea;
+    margin-top: -2px;
+}
+
+/* Process Summary */
+.process-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.summary-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+    border-color: #667eea;
+    transform: translateY(-3px);
+}
+
+.summary-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.summary-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.summary-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* UI Showcase Section */
+.ui-showcase-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ui-category {
+    margin-bottom: 4rem;
+}
+
+.ui-category h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.ui-grid {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.teacher-ui {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.student-ui {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.dashboard-ui {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.ui-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Phone Frame */
+.phone-frame {
+    width: 280px;
+    height: 500px;
+    background: #1a1a1a;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.screen-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+/* Teacher Screens */
+.teacher-setup {
+    padding: 1rem;
+    color: white;
+}
+
+.teacher-setup .screen-header {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.logo-small {
+    font-size: 1.5rem;
+}
+
+.portal-type {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.form-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.form-section h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-field input,
+.dropdown-field select {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Teacher Active Screen */
+.teacher-active {
+    padding: 1rem;
+    color: white;
+}
+
+.teacher-active .screen-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.logout {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.welcome-section {
+    margin-bottom: 1rem;
+}
+
+.session-status {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.timer-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.timer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.end-early-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.class-selection h4 {
+    margin-bottom: 0.5rem;
+}
+
+.class-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.class-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.class-item.selected {
+    background: rgba(16, 185, 129, 0.3);
+}
+
+/* Student Screens */
+.student-login {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.logo-large {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-login h3 {
+    margin-bottom: 0.3rem;
+}
+
+.login-form {
+    margin-top: 1rem;
+}
+
+.login-form h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.face-registration {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.register-face-btn,
+.signin-btn,
+.clear-btn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.register-face-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.signin-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.clear-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Student Dashboard */
+.student-dashboard {
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #333;
+}
+
+.student-dashboard .screen-header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.profile-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.profile-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e3f2fd;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.session-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.session-card.active {
+    border-left: 4px solid #10b981;
+}
+
+.status-indicator {
+    font-size: 0.8rem;
+}
+
+.check-session-btn {
+    width: 100%;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.current-activity,
+.recent-attendance {
+    margin-bottom: 1rem;
+}
+
+.current-activity h4,
+.recent-attendance h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.activity-list,
+.attendance-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.activity-item,
+.attendance-item {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Room Detection Modal */
+.room-detection {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.detection-modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+.wifi-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.detection-modal h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.status {
+    color: #3b82f6;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.room-info {
+    background: #f1f5f9;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.scanning-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.loading-dots span {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Dashboard Frames */
+.dashboard-wide {
+    width: 100%;
+}
+
+.dashboard-frame {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+.dashboard-content {
+    padding: 2rem;
+}
+
+/* Attendance Records Dashboard */
+.attendance-records .dashboard-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.live-indicator {
+    background: #10b981;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.records-table {
+    background: #f8fafc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr 0.8fr 0.8fr 0.8fr 1.5fr;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr 0.8fr 0.8fr 0.8fr 1.5fr;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+    align-items: center;
+}
+
+.table-row:hover {
+    background: #f1f5f9;
+}
+
+.subject-tag {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.subject-tag.dsa {
+    background: #3b82f6;
+}
+
+.subject-tag.ml {
+    background: #8b5cf6;
+}
+
+.subject-tag.ues {
+    background: #10b981;
+}
+
+.status.present {
+    background: #dcfce7;
+    color: #16a34a;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Analytics Overview Dashboard */
+.analytics-overview .dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    margin: -2rem -2rem 2rem -2rem;
+}
+
+.analytics-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.stat-card.total {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-card.present {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-card.absent {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.dashboard-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-dropdown,
+.search-input {
+    padding: 0.8rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.export-btn,
+.refresh-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.export-btn {
+    background: #10b981;
+    color: white;
+}
+
+.refresh-btn {
+    background: #06b6d4;
+    color: white;
+}
+
+/* UI Description */
+.ui-description {
+    text-align: center;
+    max-width: 300px;
+}
+
+.ui-description h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.ui-description p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-size: 0.8rem;
+    }
+    
+    .table-header span:nth-child(n+6),
+    .table-row span:nth-child(n+6) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2rem;
+    }
+    
+    .main-content {
+        padding: 2rem 0;
+    }
+    
+    .workflow-container {
+        padding: 2rem;
+    }
+    
+    .workflow-step {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .teacher-ui,
+    .student-ui {
+        grid-template-columns: 1fr;
+    }
+    
+    .phone-frame {
+        width: 250px;
+        height: 450px;
+    }
+    
+    .stats-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .dashboard-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-controls,
+    .action-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .ui-showcase-section {
+        padding: 2rem;
+    }
+}
+
+/* Add this CSS to your existing styles to fix iPhone screenshot fitting */
+
+.ui-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Alternative option for better aspect ratio preservation */
+.ui-image-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px;
+    display: block;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* For desktop/dashboard screenshots */
+.desktop-ui-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Ensure screen content container handles images properly */
+.screen-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Desktop frame styles for dashboard images */
+.desktop-frame {
+    width: 100%;
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    min-height: 400px;
+}
+
+.desktop-screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Logo image styling fix */
+.logo-image {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    /* Removed background and padding */
+}
+
+/* Update the existing logo styles to work with image */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Remove or comment out the old logo-icon since you're using an image now */
+/* 
+.logo-icon {
+    font-size: 2.5rem;
+}
+*/
+
+/* Alternative larger logo size if needed */
+.logo-image-large {
+    width: 600px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+    .logo-image {
+        width: 300px;
+        height: auto;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        width: 250px;
+        height: auto;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+        gap: 5px;
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .phone-frame {
+        width: 220px;
+        height: 400px;
+    }
+    
+    .workflow-container {
+        padding: 1.5rem;
+    }
+    
+    .ui-showcase-section {
+        padding: 1.5rem;
+    }
+}
